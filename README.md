@@ -34,4 +34,35 @@ The pipeline supports both **batch ETL** and **streaming ingestion** via Apache 
 - **Docker** → unified stack with Airflow, Kafka, and Spark.  
 - **GitHub Actions** → free CI automation for public repos.  
 
+---## ✅ Batch vs Streaming
+
+### 📦 Batch Mode (ETL)
+- Triggered daily with **Airflow**  
+- Fetches historical **1-min stock bars**  
+- Processes with **PySpark**  
+- Stores results in **Parquet**
+
+### ⚡ Streaming Mode (Kafka)
+- `kafka_producer.py` pushes stock ticks (simulated or via yfinance polling)  
+- `kafka_consumer.py` consumes events and writes to **Bronze (raw) storage**  
+- Later transformations (**Silver/Gold layers**) handled in **Spark**
+
+---
+
+## 🗺️ Roadmap
+- **Phase 0:** Repo scaffolding, Docker stack. ✅  
+- **Phase 1:** Batch ingestion with Airflow + pandas. ✅  
+- **Phase 2:** Transformations in PySpark. 🚧  
+- **Phase 3:** Add Kafka producer/consumer for real-time ingestion. 🚧  
+- **Phase 4:** Data quality checks (Great Expectations). 🔜  
+- **Phase 5:** Cloud-ready infra with Terraform + AWS S3. 🔜  
+
+---
+
+## 🙋‍♂️ What I Learned
+- Orchestration with **Airflow** vs event-driven streaming with **Kafka**  
+- Designing **idempotent batch jobs** and **at-least-once streaming consumers**  
+- Balancing **pandas for prototyping** vs **PySpark for scale**  
+- Structuring a **`src/` project layout** for clean imports and testing  
+
 ---
