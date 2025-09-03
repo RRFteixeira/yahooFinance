@@ -5,6 +5,14 @@ The pipeline supports both **batch ETL** and **streaming ingestion** via Apache 
 
 ---
 
+## ⚠️ Disclaimer
+This project is a **work in progress** and still under active development.  
+It was **partially developed with the assistance of AI tools** to accelerate learning, design, and implementation.  
+The main purpose of this repository is to **practice data engineering skills**, showcase a modern stack, and document my learning journey.
+
+
+---
+
 ## 🎯 Objectives
 - Build a **daily batch ETL pipeline** with Airflow, PySpark, and Parquet.
 - Extend with **real-time ingestion** of stock ticks through Kafka.
@@ -52,12 +60,12 @@ The pipeline supports both **batch ETL** and **streaming ingestion** via Apache 
 ---
 
 ## 🗺️ Roadmap
-- **Phase 0:** Repo scaffolding, Docker stack. ✅  
-- **Phase 1:** Batch ingestion with Airflow + pandas. ✅  
-- **Phase 2:** Transformations in PySpark. 🚧  
-- **Phase 3:** Add Kafka producer/consumer for real-time ingestion. 🚧  
-- **Phase 4:** Data quality checks (Great Expectations). 🔜  
-- **Phase 5:** Cloud-ready infra with Terraform + AWS S3. 🔜  
+- **Phase 0:** Repo scaffolding, Docker stack. 
+- **Phase 1:** Batch ingestion with Airflow + pandas. 
+- **Phase 2:** Transformations in PySpark. 
+- **Phase 3:** Add Kafka producer/consumer for real-time ingestion. 
+- **Phase 4:** Data quality checks (Great Expectations). 
+- **Phase 5:** Cloud-ready infra with Terraform + AWS S3. 
 
 ---
 
