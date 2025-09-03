@@ -34,7 +34,9 @@ The pipeline supports both **batch ETL** and **streaming ingestion** via Apache 
 - **Docker** → unified stack with Airflow, Kafka, and Spark.  
 - **GitHub Actions** → free CI automation for public repos.  
 
----## ✅ Batch vs Streaming
+---
+
+## ✅ Batch vs Streaming
 
 ### 📦 Batch Mode (ETL)
 - Triggered daily with **Airflow**  
