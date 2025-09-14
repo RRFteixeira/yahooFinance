@@ -3,3 +3,4 @@ pandas
 jupyter
 pyarrow
 matplotlib
+pytest
