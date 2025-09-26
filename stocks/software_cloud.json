@@ -1,0 +1,56 @@
+{
+  "MSFT": {
+    "name": "Microsoft Corporation",
+    "category": "Software & Cloud",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "ORCL": {
+    "name": "Oracle Corporation",
+    "category": "Software & Cloud",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "CRM": {
+    "name": "Salesforce Inc.",
+    "category": "Software & Cloud",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "ADBE": {
+    "name": "Adobe Inc.",
+    "category": "Software & Cloud",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "SAP": {
+    "name": "SAP SE",
+    "category": "Software & Cloud",
+    "country": "Germany",
+    "continent": "Europe"
+  },
+  "NOW": {
+    "name": "ServiceNow Inc.",
+    "category": "Software & Cloud",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "AMZN": {
+    "name": "Amazon.com Inc.",
+    "category": "Software & Cloud",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "GOOGL": {
+    "name": "Alphabet Inc. (Google)",
+    "category": "Software & Cloud",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "BABA": {
+    "name": "Alibaba Group",
+    "category": "Software & Cloud",
+    "country": "China",
+    "continent": "Asia"
+  }
+}

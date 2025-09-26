@@ -1,0 +1,32 @@
+{
+  "ACN": {
+    "name": "Accenture plc",
+    "category": "IT Services & Consulting",
+    "country": "Ireland",
+    "continent": "Europe"
+  },
+  "IBM": {
+    "name": "International Business Machines",
+    "category": "IT Services & Consulting",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "CAP.PA": {
+    "name": "Capgemini SE",
+    "category": "IT Services & Consulting",
+    "country": "France",
+    "continent": "Europe"
+  },
+  "INFY": {
+    "name": "Infosys Limited",
+    "category": "IT Services & Consulting",
+    "country": "India",
+    "continent": "Asia"
+  },
+  "TCS.NS": {
+    "name": "Tata Consultancy Services",
+    "category": "IT Services & Consulting",
+    "country": "India",
+    "continent": "Asia"
+  }
+}

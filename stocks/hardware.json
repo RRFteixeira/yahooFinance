@@ -1,0 +1,20 @@
+{
+  "AAPL": {
+    "name": "Apple Inc.",
+    "category": "Hardware & Consumer Electronics",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "SONY": {
+    "name": "Sony Group Corporation",
+    "category": "Hardware & Consumer Electronics",
+    "country": "Japan",
+    "continent": "Asia"
+  },
+  "LPL": {
+    "name": "LG Display",
+    "category": "Hardware & Consumer Electronics",
+    "country": "South Korea",
+    "continent": "Asia"
+  }
+}

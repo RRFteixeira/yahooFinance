@@ -1,0 +1,32 @@
+{
+  "SNPS": {
+    "name": "Synopsys Inc.",
+    "category": "EDA & Engineering Tools",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "CDNS": {
+    "name": "Cadence Design Systems",
+    "category": "EDA & Engineering Tools",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "SIEGY": {
+    "name": "Siemens AG",
+    "category": "EDA & Engineering Tools",
+    "country": "Germany",
+    "continent": "Europe"
+  },
+  "ANSS": {
+    "name": "Ansys Inc.",
+    "category": "EDA & Engineering Tools",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "KEYS": {
+    "name": "Keysight Technologies",
+    "category": "EDA & Engineering Tools",
+    "country": "United States",
+    "continent": "North America"
+  }
+}
