@@ -1,4 +1,4 @@
-from src.fetch_data import fetch_prices
+from src.apps.fetch_data import fetch_prices
 from pathlib import Path
 
 def test_fetch_prices_creates_file(tmp_path, monkeypatch):

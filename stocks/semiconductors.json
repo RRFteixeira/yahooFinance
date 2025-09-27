@@ -1,0 +1,92 @@
+{
+  "NVDA": {
+    "name": "NVIDIA Corporation",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "AMD": {
+    "name": "Advanced Micro Devices",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "AVGO": {
+    "name": "Broadcom Inc.",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "QCOM": {
+    "name": "Qualcomm Inc.",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "TXN": {
+    "name": "Texas Instruments",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "TSM": {
+    "name": "Taiwan Semiconductor Manufacturing Company",
+    "category": "Semiconductors & Manufacturing",
+    "country": "Taiwan",
+    "continent": "Asia"
+  },
+  "INTC": {
+    "name": "Intel Corporation",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "SSNLF": {
+    "name": "Samsung Electronics",
+    "category": "Semiconductors & Manufacturing",
+    "country": "South Korea",
+    "continent": "Asia"
+  },
+  "MU": {
+    "name": "Micron Technology",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "GFS": {
+    "name": "GlobalFoundries",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "ASML": {
+    "name": "ASML Holding N.V.",
+    "category": "Semiconductors & Manufacturing",
+    "country": "Netherlands",
+    "continent": "Europe"
+  },
+  "AMAT": {
+    "name": "Applied Materials",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "LRCX": {
+    "name": "Lam Research",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "TOELY": {
+    "name": "Tokyo Electron",
+    "category": "Semiconductors & Manufacturing",
+    "country": "Japan",
+    "continent": "Asia"
+  },
+  "KLAC": {
+    "name": "KLA Corporation",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  }
+}

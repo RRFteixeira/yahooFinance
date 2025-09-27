@@ -1,0 +1,32 @@
+{
+  "CSCO": {
+    "name": "Cisco Systems",
+    "category": "Networking & Telecom",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "NOK": {
+    "name": "Nokia Corporation",
+    "category": "Networking & Telecom",
+    "country": "Finland",
+    "continent": "Europe"
+  },
+  "ERIC": {
+    "name": "Ericsson",
+    "category": "Networking & Telecom",
+    "country": "Sweden",
+    "continent": "Europe"
+  },
+  "JNPR": {
+    "name": "Juniper Networks",
+    "category": "Networking & Telecom",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "ANET": {
+    "name": "Arista Networks",
+    "category": "Networking & Telecom",
+    "country": "United States",
+    "continent": "North America"
+  }
+}
