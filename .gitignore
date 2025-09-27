@@ -207,4 +207,12 @@ marimo/_lsp/
 __marimo__/
 
 
-data/
+# Data lake outputs (keep structure, ignore contents)
+data/bronze/**
+data/raw/**
+data/samples/**
+
+# allow placeholder files so folders exist in repo
+!data/bronze/.gitkeep
+!data/raw/.gitkeep
+!data/samples/.gitkeep
