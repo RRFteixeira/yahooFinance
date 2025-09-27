@@ -7,6 +7,7 @@ The pipeline supports both **batch ETL** and **streaming ingestion** via Apache 
 
 ## ⚠️ Disclaimer
 This project is a **work in progress** and is still under active development.  
+
 It was **partially developed with the assistance of AI tools** to accelerate learning, design, and implementation.  
 The main purpose of this repository is to **practice data engineering skills**, showcase a modern stack, and document my learning journey.
 
