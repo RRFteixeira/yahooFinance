@@ -1,0 +1,32 @@
+{
+  "PLTR": {
+    "name": "Palantir Technologies",
+    "category": "AI & Data Platforms",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "SNOW": {
+    "name": "Snowflake Inc.",
+    "category": "AI & Data Platforms",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "DDOG": {
+    "name": "Datadog Inc.",
+    "category": "AI & Data Platforms",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "MDB": {
+    "name": "MongoDB Inc.",
+    "category": "AI & Data Platforms",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "AI": {
+    "name": "C3.ai Inc.",
+    "category": "AI & Data Platforms",
+    "country": "United States",
+    "continent": "North America"
+  }
+}

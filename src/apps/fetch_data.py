@@ -14,10 +14,19 @@ def fetch_all_tickers(path: str):
 
 def fetch_ticker(file_path: str):
     
+    sysdate = datetime.datetime.today().strftime('%Y_%m_%d')
+    
+    # Configure logging
+    logging.basicConfig(
+        filename=f"data/raw/{sysdate}/yfinance_error.log",
+        level=logging.INFO,          
+        format="%(asctime)s - %(levelname)s - %(message)s"
+    )
+    
     with open(file=file_path) as f:
         tickers = json.load(fp=f)
         ticker_category= file_path.removeprefix('stocks/').removesuffix('.json')
-        sysdate = datetime.datetime.today().strftime('%Y_%m_%d')
+        
             
         for ticker in tickers.keys():
        

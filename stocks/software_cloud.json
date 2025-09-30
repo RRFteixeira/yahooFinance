@@ -52,5 +52,23 @@
     "category": "Software & Cloud",
     "country": "China",
     "continent": "Asia"
+  },
+  "TEAM": {
+    "name": "Atlassian Corporation Plc",
+    "category": "Software & Cloud",
+    "country": "Australia",
+    "continent": "Oceania"
+  },
+  "WDAY": {
+    "name": "Workday Inc.",
+    "category": "Software & Cloud",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "INTU": {
+    "name": "Intuit Inc.",
+    "category": "Software & Cloud",
+    "country": "United States",
+    "continent": "North America"
   }
 }

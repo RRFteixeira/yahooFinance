@@ -1,0 +1,32 @@
+{
+  "PANW": {
+    "name": "Palo Alto Networks",
+    "category": "Cybersecurity",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "FTNT": {
+    "name": "Fortinet Inc.",
+    "category": "Cybersecurity",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "CHKP": {
+    "name": "Check Point Software Technologies",
+    "category": "Cybersecurity",
+    "country": "Israel",
+    "continent": "Asia"
+  },
+  "CRWD": {
+    "name": "CrowdStrike Holdings",
+    "category": "Cybersecurity",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "ZS": {
+    "name": "Zscaler Inc.",
+    "category": "Cybersecurity",
+    "country": "United States",
+    "continent": "North America"
+  }
+}

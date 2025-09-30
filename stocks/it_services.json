@@ -28,5 +28,17 @@
     "category": "IT Services & Consulting",
     "country": "India",
     "continent": "Asia"
+  },
+   "WIT": {
+    "name": "Wipro Limited",
+    "category": "IT Services & Consulting",
+    "country": "India",
+    "continent": "Asia"
+  },
+  "HCLTECH.NS": {
+    "name": "HCL Technologies Limited",
+    "category": "IT Services & Consulting",
+    "country": "India",
+    "continent": "Asia"
   }
 }
