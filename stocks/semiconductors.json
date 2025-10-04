@@ -41,7 +41,7 @@
     "country": "United States",
     "continent": "North America"
   },
-  "SSNLF": {
+  "005930.KS": {
     "name": "Samsung Electronics",
     "category": "Semiconductors & Manufacturing",
     "country": "South Korea",
@@ -85,6 +85,24 @@
   },
   "KLAC": {
     "name": "KLA Corporation",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United States",
+    "continent": "North America"
+  },
+    "ARM": {
+    "name": "Arm Holdings plc",
+    "category": "Semiconductors & Manufacturing",
+    "country": "United Kingdom",
+    "continent": "Europe"
+  },
+  "0981.HK": {
+    "name": "Semiconductor Manufacturing International Corporation (SMIC)",
+    "category": "Semiconductors & Manufacturing",
+    "country": "China",
+    "continent": "Asia"
+  },
+  "MRVL": {
+    "name": "Marvell Technology Inc.",
     "category": "Semiconductors & Manufacturing",
     "country": "United States",
     "continent": "North America"

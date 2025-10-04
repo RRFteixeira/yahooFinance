@@ -16,5 +16,23 @@
     "category": "Hardware & Consumer Electronics",
     "country": "South Korea",
     "continent": "Asia"
+  },
+  "DELL": {
+    "name": "Dell Technologies Inc.",
+    "category": "Hardware & Consumer Electronics",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "HPQ": {
+    "name": "HP Inc.",
+    "category": "Hardware & Consumer Electronics",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "1810.HK": {
+    "name": "Xiaomi Corporation",
+    "category": "Hardware & Consumer Electronics",
+    "country": "China",
+    "continent": "Asia"
   }
 }

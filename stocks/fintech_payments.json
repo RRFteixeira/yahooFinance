@@ -1,0 +1,32 @@
+{
+  "PYPL": {
+    "name": "PayPal Holdings",
+    "category": "Fintech & Payments",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "SQ": {
+    "name": "Block Inc. (Square)",
+    "category": "Fintech & Payments",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "ADYEY": {
+    "name": "Adyen NV",
+    "category": "Fintech & Payments",
+    "country": "Netherlands",
+    "continent": "Europe"
+  },
+  "V": {
+    "name": "Visa Inc.",
+    "category": "Fintech & Payments",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "MA": {
+    "name": "Mastercard Inc.",
+    "category": "Fintech & Payments",
+    "country": "United States",
+    "continent": "North America"
+  }
+}

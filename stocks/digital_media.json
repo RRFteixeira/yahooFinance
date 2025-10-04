@@ -16,5 +16,17 @@
     "category": "Digital Platforms & Media",
     "country": "China",
     "continent": "Asia"
+  },
+  "SPOT": {
+    "name": "Spotify Technology S.A.",
+    "category": "Digital Platforms & Media",
+    "country": "Luxembourg",
+    "continent": "Europe"
+  },
+  "SNAP": {
+    "name": "Snap Inc.",
+    "category": "Digital Platforms & Media",
+    "country": "United States",
+    "continent": "North America"
   }
 }

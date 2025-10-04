@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: yfinance-postgres
+    restart: unless-stopped
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-yfinance}
+      POSTGRES_USER: ${POSTGRES_USER:-yfinance_app}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+    volumes:
+      - pgdata_yfinance:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-yfinance_app} -d ${POSTGRES_DB:-yfinance}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata_yfinance:
+    name: pgdata_yfinance

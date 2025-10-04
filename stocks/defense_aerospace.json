@@ -1,0 +1,62 @@
+{
+  "HO.PA": {
+    "name": "Thales Group",
+    "category": "Defense & Aerospace Technology",
+    "country": "France",
+    "continent": "Europe"
+  },
+  "RHM.DE": {
+    "name": "Rheinmetall AG",
+    "category": "Defense & Aerospace Technology",
+    "country": "Germany",
+    "continent": "Europe"
+  },
+  "LDO.MI": {
+    "name": "Leonardo S.p.A.",
+    "category": "Defense & Aerospace Technology",
+    "country": "Italy",
+    "continent": "Europe"
+  },
+  "LMT": {
+    "name": "Lockheed Martin Corporation",
+    "category": "Defense & Aerospace Technology",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "RTX": {
+    "name": "RTX Corporation (Raytheon Technologies)",
+    "category": "Defense & Aerospace Technology",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "NOC": {
+    "name": "Northrop Grumman Corporation",
+    "category": "Defense & Aerospace Technology",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "GD": {
+    "name": "General Dynamics Corporation",
+    "category": "Defense & Aerospace Technology",
+    "country": "United States",
+    "continent": "North America"
+  },
+  "BA": {
+    "name": "The Boeing Company (Defense & Space segment)",
+    "category": "Defense & Aerospace Technology",
+    "country": "United States",
+    "continent": "North America"
+  },
+    "BAESY": {
+    "name": "BAE Systems plc",
+    "category": "Defense & Aerospace Technology",
+    "country": "United Kingdom",
+    "continent": "Europe"
+  },
+  "SAAB.ST": {
+    "name": "Saab AB",
+    "category": "Defense & Aerospace Technology",
+    "country": "Sweden",
+    "continent": "Europe"
+  }
+}

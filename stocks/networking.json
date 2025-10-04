@@ -17,16 +17,16 @@
     "country": "Sweden",
     "continent": "Europe"
   },
-  "JNPR": {
-    "name": "Juniper Networks",
-    "category": "Networking & Telecom",
-    "country": "United States",
-    "continent": "North America"
-  },
   "ANET": {
     "name": "Arista Networks",
     "category": "Networking & Telecom",
     "country": "United States",
     "continent": "North America"
+  },
+   "0763.HK": {
+    "name": "ZTE Corporation",
+    "category": "Networking & Telecom",
+    "country": "China",
+    "continent": "Asia"
   }
 }
