@@ -4,3 +4,7 @@ jupyter
 pyarrow
 matplotlib
 pytest
+
+SQLAlchemy
+psycopg2-binary
+python-dotenv

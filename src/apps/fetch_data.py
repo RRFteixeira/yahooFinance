@@ -1,9 +1,12 @@
+from src.apps.db_manager import log_ingestion
+
+from pathlib import Path
 import yfinance as yf
 import json
-from pathlib import Path
 import os
 import datetime
 import logging
+import pandas as pd
 
 def fetch_all_tickers(path: str):
     dir_list = os.listdir(path=path)
@@ -15,7 +18,8 @@ def fetch_all_tickers(path: str):
 def fetch_ticker(file_path: str):
     
     sysdate = datetime.datetime.today().strftime('%Y_%m_%d')
-    
+    log_dir = Path(f"data/raw/{sysdate}")
+    log_dir.mkdir(parents=True, exist_ok=True)    
     # Configure logging
     logging.basicConfig(
         filename=f"data/raw/{sysdate}/yfinance_error.log",
@@ -29,15 +33,26 @@ def fetch_ticker(file_path: str):
         
             
         for ticker in tickers.keys():
-       
-            print(f'Downloading ticker: {sysdate}/{ticker_category}/{ticker}')
             
-            data = yf.download(tickers=ticker, multi_level_index=False, auto_adjust=False, interval="1m", period="7d")
-            data = data.reset_index()
+            print(f'Downloading ticker: {sysdate}/{ticker_category}/{ticker}')
             out_dir = Path(f"data/raw/{sysdate}/{ticker_category}/")
             out_dir.mkdir(parents=True, exist_ok= True, )
             out_path = out_dir / f"{ticker}.parquet"
-            data.to_parquet(path=out_path, index=False, engine="pyarrow", compression="snappy")           
+            
+
+            data = yf.download(tickers=ticker, multi_level_index=False, auto_adjust=False, interval="1m", period="7d")
+            data = data.reset_index()
+            data.to_parquet(path=out_path, index=False, engine="pyarrow", compression="snappy")
+
+            
+            if len(data)<200:
+                err_msg = f"{ticker}: invalid number of rows. row: {len(data)}"
+                log_ingestion(ticker=ticker, file_path=str(out_path), status="FAILED", category=ticker_category, rows_written=len(data), error_message=err_msg)
+
+            else:
+                log_ingestion(ticker=ticker, file_path=str(out_path), status="SUCCESS", category=ticker_category, rows_written=len(data))
+
+                      
 
 if __name__ == '__main__':
     fetch_all_tickers(path='stocks/')

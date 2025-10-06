@@ -11,6 +11,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
     volumes:
       - pgdata_yfinance:/var/lib/postgresql/data
+      - ../sql:/docker-entrypoint-initdb.d:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-yfinance_app} -d ${POSTGRES_DB:-yfinance}"]
       interval: 5s
