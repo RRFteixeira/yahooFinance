@@ -17,7 +17,16 @@ services:
       interval: 5s
       timeout: 3s
       retries: 10
+    networks:
+      yf_net:
+        aliases:
+          - postgres 
 
 volumes:
   pgdata_yfinance:
     name: pgdata_yfinance
+
+networks:               
+  yf_net:
+    name: yf_net
+    external: true
