@@ -18,11 +18,11 @@ def fetch_all_tickers(path: str):
 def fetch_ticker(file_path: str):
     
     sysdate = datetime.datetime.today().strftime('%Y_%m_%d')
-    log_dir = Path(f"data/raw/{sysdate}")
+    log_dir = Path(f"data/bronze/{sysdate}")
     log_dir.mkdir(parents=True, exist_ok=True)    
     # Configure logging
     logging.basicConfig(
-        filename=f"data/raw/{sysdate}/yfinance_error.log",
+        filename=f"data/bronze/{sysdate}/yfinance_error.log",
         level=logging.INFO,          
         format="%(asctime)s - %(levelname)s - %(message)s"
     )
@@ -35,14 +35,14 @@ def fetch_ticker(file_path: str):
         for ticker in tickers.keys():
             
             print(f'Downloading ticker: {sysdate}/{ticker_category}/{ticker}')
-            out_dir = Path(f"data/raw/{sysdate}/{ticker_category}/")
+            out_dir = Path(f"data/bronze/{sysdate}/{ticker_category}/")
             out_dir.mkdir(parents=True, exist_ok= True, )
             out_path = out_dir / f"{ticker}.parquet"
             
 
             data = yf.download(tickers=ticker, multi_level_index=False, auto_adjust=False, interval="1m", period="7d")
             data = data.reset_index()
-            data.to_parquet(path=out_path, index=False, engine="pyarrow", compression="snappy")
+            data.to_parquet(path=out_path, index=False, engine="pyarrow", compression="snappy", coerce_timestamps="us", allow_truncated_timestamps=True)
 
             
             if len(data)<200:

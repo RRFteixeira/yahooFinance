@@ -8,3 +8,6 @@ pytest
 SQLAlchemy
 psycopg2-binary
 python-dotenv
+
+pyspark==3.4.0
+pyyaml>=6

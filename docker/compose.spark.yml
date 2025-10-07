@@ -1,0 +1,23 @@
+services:
+  spark:
+    build:
+      context: ..                     
+      dockerfile: docker/spark/Dockerfile
+    image: yahoo-spark:dev
+    user: "0:0"
+    working_dir: /app
+    volumes:
+      - ../:/app
+    environment:
+      SPARK_LOCAL_HOSTNAME: localhost
+      PYSPARK_PYTHON: python3
+      PYSPARK_DRIVER_PYTHON: python3
+      PYTHONPATH: /app
+    networks:
+      - yf_net
+    command: python3 -m src.transforms._smoke_spark
+
+networks:
+  yf_net:
+    name: yf_net
+    external: true

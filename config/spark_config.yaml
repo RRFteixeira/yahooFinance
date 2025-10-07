@@ -1,0 +1,11 @@
+app_name: yahoo-silver-local
+master: "local[2]"                # gentle for dev; 2 executor threads
+driver_host: "127.0.0.1"          # avoids Windows hostname issues
+driver_bind: "127.0.0.1"
+shuffle_partitions: 4             # small shuffles in local dev
+parquet_compression: "snappy"
+
+spark_jars_packages: "org.postgresql:postgresql:42.7.4"
+jdbc_url: "jdbc:postgresql://postgres:5432/yfinance"
+jdbc_user: "yfinance_app"
+jdbc_password: "password"

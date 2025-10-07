@@ -209,10 +209,12 @@ __marimo__/
 
 # Data lake outputs (keep structure, ignore contents)
 data/bronze/**
-data/raw/**
+data/silver/**
+data/gold/**
 data/samples/**
 
 # allow placeholder files so folders exist in repo
 !data/bronze/.gitkeep
-!data/raw/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
 !data/samples/.gitkeep
