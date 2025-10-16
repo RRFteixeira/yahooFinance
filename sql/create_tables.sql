@@ -54,3 +54,33 @@ CREATE TABLE IF NOT EXISTS gold.daily_agg (
   PRIMARY KEY (ticker, trading_date)
 );
 CREATE INDEX IF NOT EXISTS ix_daily_agg_ticker_date ON gold.daily_agg (ticker, trading_date);
+
+
+
+CREATE TABLE IF NOT EXISTS public.silver_run_log (
+  id BIGSERIAL PRIMARY KEY,
+  run_ts TIMESTAMPTZ DEFAULT now(),
+  load_date TEXT NOT NULL,
+  category  TEXT NOT NULL,
+  ticker    TEXT NOT NULL,
+  rows      INT  NOT NULL,
+  min_ts    TIMESTAMPTZ,
+  max_ts    TIMESTAMPTZ,
+  out_path  TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_silver_run_log ON public.silver_run_log(load_date, category, ticker);
+
+
+
+CREATE TABLE IF NOT EXISTS public.gold_daily_ohlc (
+  ticker   TEXT NOT NULL,
+  category TEXT NOT NULL,
+  date     DATE NOT NULL,
+  open     DOUBLE PRECISION,
+  high     DOUBLE PRECISION,
+  low      DOUBLE PRECISION,
+  close    DOUBLE PRECISION,
+  volume   BIGINT,
+  daily_return DOUBLE PRECISION,
+  PRIMARY KEY (ticker, date, category)
+);

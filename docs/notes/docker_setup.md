@@ -2,6 +2,7 @@
 
 # Start containers (detached)
 docker compose -f docker/compose.db.yml up -d
+docker compose -f docker/compose.airflow.yml up -d
 
 # See running containers
 docker ps

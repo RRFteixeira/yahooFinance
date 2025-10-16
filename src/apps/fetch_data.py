@@ -1,5 +1,5 @@
 from src.apps.db_manager import log_ingestion
-
+from typing import Optional, Iterable, Dict, Any
 from pathlib import Path
 import yfinance as yf
 import json
@@ -52,7 +52,15 @@ def fetch_ticker(file_path: str):
             else:
                 log_ingestion(ticker=ticker, file_path=str(out_path), status="SUCCESS", category=ticker_category, rows_written=len(data))
 
-                      
+def run_fetch(path: str = "stocks/") -> Dict[str, Any]:
+    """
+    Minimal wrapper callable so Airflow’s PythonOperator can import & run it.
+    Returns a small summary dict (goes to XCom).
+    """
+    before = datetime.datetime.now()
+    fetch_all_tickers(path=path)
+    duration = (datetime.datetime.now() - before).total_seconds()
+    return {"path": path, "duration_sec": duration}                      
 
 if __name__ == '__main__':
     fetch_all_tickers(path='stocks/')
