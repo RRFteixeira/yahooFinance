@@ -13,6 +13,11 @@ services:
     environment:
       <<: *airflow-env
       _PIP_ADDITIONAL_REQUIREMENTS: "yfinance pandas pyarrow psycopg2-binary"
+      POSTGRES_HOST: postgres    
+      POSTGRES_PORT: "5432"
+      POSTGRES_DB: yfinance
+      POSTGRES_USER: yfinance_app
+      POSTGRES_PASSWORD: password
     user: "50000:0"
     entrypoint: /bin/bash
     command: >
@@ -33,6 +38,11 @@ services:
     environment:
       <<: *airflow-env
       _PIP_ADDITIONAL_REQUIREMENTS: "yfinance pandas pyarrow psycopg2-binary"
+      POSTGRES_HOST: postgres    
+      POSTGRES_PORT: "5432"
+      POSTGRES_DB: yfinance
+      POSTGRES_USER: yfinance_app
+      POSTGRES_PASSWORD: password
     command: webserver
     ports: ["8080:8080"]
     user: "50000:0"
@@ -56,6 +66,11 @@ services:
     environment:
       <<: *airflow-env
       _PIP_ADDITIONAL_REQUIREMENTS: "yfinance pandas pyarrow psycopg2-binary"
+      POSTGRES_HOST: postgres    
+      POSTGRES_PORT: "5432"
+      POSTGRES_DB: yfinance
+      POSTGRES_USER: yfinance_app
+      POSTGRES_PASSWORD: password
     command: scheduler
     user: "50000:0"
     volumes:

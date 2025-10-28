@@ -1,4 +1,4 @@
-# 📈 Yahoo Finance Data Engineering Pipeline
+# Yahoo Finance Data Engineering Pipeline
 
 An end-to-end data engineering project built with free tools to ingest, process, and store financial market data from Yahoo Finance.  
 The pipeline supports both **batch ETL** and **streaming ingestion** via Apache Kafka, showcasing scalable and modern data engineering practices.
@@ -14,7 +14,7 @@ The main purpose of this repository is to **practice data engineering skills**, 
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Build a **daily batch ETL pipeline** with Airflow, PySpark, and Parquet.
 - Extend with **real-time ingestion** of stock ticks through Kafka.
 - Demonstrate **scalability** from 100 → 1000+ tickers.
@@ -22,58 +22,60 @@ The main purpose of this repository is to **practice data engineering skills**, 
 
 ---
 
-## 🔧 Tech Stack
-- **Python 3.x** – core ETL and utilities.
-- **Apache Airflow** – batch orchestration & scheduling.
-- **Apache Kafka** – streaming ingestion and message queue.
-- **PySpark** – distributed processing of large datasets.
-- **Pandas** – lightweight transforms & exploration.
-- **Docker Compose** – reproducible local dev stack (Airflow + Kafka + MinIO).
-- **MinIO / Local FS** – object storage (S3-compatible).
-- **GitHub Actions** – CI for linting & testing.
-- **Parquet** – columnar storage format.
+## Tech Stack
+- **Python** – core ETL logic and utilities  
+- **Apache Airflow** – batch orchestration and scheduling  
+- **Apache Kafka** – streaming ingestion and event delivery  
+- **PySpark** – distributed processing for large datasets  
+- **Pandas** – lightweight transformations and exploration  
+- **Docker Compose** – reproducible local environment (Airflow, Kafka, MinIO)  
+- **MinIO** – S3-compatible object storage  
+- **Parquet** – efficient columnar storage format  
+- **Delta Tables** – ACID storage layer on top of Parquet  
+- **Terraform** – infrastructure as code (for future cloud deployment)  
+- **GitHub Actions** – CI for testing and linting  
 
 ---
 
-## 🧠 Why These Technologies?
-- **Airflow** → robust batch scheduling, retries, DAG-based orchestration.  
-- **Kafka** → real-time streaming of stock events into the pipeline.  
-- **PySpark** → distributed processing when scaling beyond pandas.  
-- **Parquet** → compressed, analytical storage.  
-- **Docker** → unified stack with Airflow, Kafka, and Spark.  
-- **GitHub Actions** → free CI automation for public repos.  
+## Why These Technologies?
+
+- **Airflow** – production-grade scheduler with retries and monitoring  
+- **Kafka** – handles real-time data streams  
+- **PySpark** – scales transformations beyond pandas limits  
+- **Parquet** – compact and optimized for analytics  
+- **Delta Tables** – provides versioning and transactional reliability  
+- **Docker** – consistent local stack for all services  
+- **MinIO** – self-hosted object storage compatible with AWS S3  
+- **Terraform** – automates infrastructure setup and provisioning  
+- **GitHub Actions** – continuous integration and automation  
+
+Everything is free, runs locally, and mirrors real-world data engineering patterns.
 
 ---
 
-## ✅ Batch vs Streaming
+## Roadmap
+- **Phase 0:** Project setup and repository structure  
+- **Phase 1:** Initial Yahoo Finance data extraction  
+- **Phase 2:** Store data in Parquet (Bronze layer)  
+- **Phase 3:** Metadata logging in PostgreSQL  
+- **Phase 4:** Error handling and logging system  
+- **Phase 5:** Modularization and configuration management  
+- **Phase 6:** Airflow integration and automated ingestion (current phase)  
+- **Phase 7:** Add MinIO and Delta Lake for object storage  
+- **Phase 8:** Introduce PySpark for Silver/Gold transformations  
+- **Phase 9:** Kafka streaming ingestion  
+- **Phase 10:** Infrastructure with Terraform and CI/CD pipeline  
 
-### 📦 Batch Mode (ETL)
-- Triggered daily with **Airflow**  
-- Fetches historical **1-min stock bars**  
-- Processes with **PySpark**  
-- Stores results in **Parquet**
 
-### ⚡ Streaming Mode (Kafka)
-- `kafka_producer.py` pushes stock ticks (simulated or via yfinance polling)  
-- `kafka_consumer.py` consumes events and writes to **Bronze (raw) storage**  
-- Later transformations (**Silver/Gold layers**) handled in **Spark**
+## How to start
+**1** - docker network create yf_net
+**2** - docker compose -f docker/compose.db.yml up -d
+**3** - docker compose -f docker/compose.airflow.yml up -d
+**4** - docker compose -f docker/compose.airflow.yml up -d
+**4** - http://localhost:8080 Username: admin Password: admin
+**5** - stop everything - docker compose -f docker/compose.airflow.yml down docker compose -f docker/compose.db.yml down
 
----
-
-## 🗺️ Roadmap
-- **Phase 0:** Repo scaffolding, Docker stack. 
-- **Phase 1:** Batch ingestion with Airflow + pandas. 
-- **Phase 2:** Transformations in PySpark. 
-- **Phase 3:** Add Kafka producer/consumer for real-time ingestion. 
-- **Phase 4:** Data quality checks (Great Expectations). 
-- **Phase 5:** Cloud-ready infra with Terraform + AWS S3. 
-
----
-
-## 🙋‍♂️ What I Learned
-- Orchestration with **Airflow** vs event-driven streaming with **Kafka**  
-- Designing **idempotent batch jobs** and **at-least-once streaming consumers**  
-- Balancing **pandas for prototyping** vs **PySpark for scale**  
-- Structuring a **`src/` project layout** for clean imports and testing  
 
 ---
+
+
